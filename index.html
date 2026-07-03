@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyCast Pro</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <i class="fa-solid fa-cloud-sun"></i>
+            <h2>SkyCast Pro</h2>
+        </div>
+
+        <div class="search-box">
+
+            <input type="text" id="cityInput" placeholder="Search city...">
+
+            <button id="searchBtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <button id="locationBtn">
+                <i class="fa-solid fa-location-crosshairs"></i>
+            </button>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="current-weather">
+
+            <div class="weather-card">
+
+                <h1 id="city">City</h1>
+
+                <p id="date">Date</p>
+
+                <img id="icon" src="" alt="weather">
+
+                <h2 id="temp">--°C</h2>
+
+                <h3 id="condition">Condition</h3>
+
+            </div>
+
+        </section>
+
+        <section class="details">
+
+            <div class="card">
+                <i class="fa-solid fa-droplet"></i>
+                <h3>Humidity</h3>
+                <p id="humidity">--%</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-wind"></i>
+                <h3>Wind</h3>
+                <p id="wind">-- km/h</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-eye"></i>
+                <h3>Visibility</h3>
+                <p id="visibility">-- km</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-gauge"></i>
+                <h3>Pressure</h3>
+                <p id="pressure">-- mb</p>
+            </div>
+
+        </section>
+
+        <section class="forecast">
+
+            <h2>7 Day Forecast</h2>
+
+            <div id="forecastCards">
+
+            </div>
+
+        </section>
+
+        <section class="chart-section">
+
+            <h2>Temperature Chart</h2>
+
+            <canvas id="tempChart"></canvas>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            © 2026 SkyCast Pro | WeatherAPI Project
+        </p>
+
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
